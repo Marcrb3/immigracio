@@ -75,6 +75,13 @@
                     minZoom: 1,
                     attribution: 'Mapbox | Font de les dades: Ajuntament de Barcelona'
                 });
+            
+            capa2 = L.tileLayer(
+                'https://api.mapbox.com/styles/v1/marcrb3/cjslvd61a1iqv1flyfc3rvsya/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFyY3JiMyIsImEiOiJjanJqanZvMXowYzdnNDRsbGN4N3JyMGhuIn0.im2TOkqyqEpCXhN4LWoZuA', {
+                   maxZoom: 19,
+                   minZoom: 1,
+                   attribution: 'Mapbox | Font de les dades: Ajuntament de Barcelona'
+                });  
 
 
 
@@ -188,6 +195,7 @@
             var mapaBase = {
                 'Mapa': capa0,
                 'Gris': capa1,
+                'Nocturn':capa2,
                 'Foto': Esri_WorldImagery,
             };
 
